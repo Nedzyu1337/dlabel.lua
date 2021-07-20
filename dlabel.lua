@@ -293,3 +293,17 @@ function Label( strText, parent )
 	return lbl
 
 end
+
+--[[
+derma.DefineControl( "DLabeled", "A Label", PANEL, "Label" )
+
+-- Convenience Function
+function Label( strText, parent )
+
+	local lbl = vgui.Create( "DLabeled", parent )
+	lbl:SetText( strText )
+
+	return lbl
+
+end
+--]]
